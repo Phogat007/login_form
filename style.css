@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    background: none; 
+}
+
+header .logo {
+    display: inline-block;
+    position: relative;
+}
+
+header .logo a {
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'koho', sans-serif;
+    color: #ffffff; 
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+
+header .link {
+    display: flex;
+    position: relative;
+}
+
+header .link ul {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+header .link ul li {
+    list-style: none;
+}
+
+header .link ul li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #ffffff; 
+    font-family: 'koho', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+
+header .link ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: flex;
+    background-color: #ffffff; 
+    transition: .3s all;
+}
+
+header .link ul li:hover::after {
+    width: 100%;
+}
+
+header .btn button {
+    display: block;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'koho', sans-serif;
+    font-weight: 700;
+    backdrop-filter: blur(16px);
+    border: 2px solid #ffffff; 
+    background: transparent;
+    color: #ffffff; 
+    transition: .3s all;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+
+header .btn button:hover {
+    background: #ffffff; 
+    color: #101419; 
+}
+
+/* ############## BACKGROUND IMAGE ########### */
+
+.menu .image_box {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: block;
+}
+
+.menu .image_box img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ############## LOGIN FORM ########### */
+
+.login-form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.login-form form {
+    width: 350px;
+    backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 2.5rem 2rem;
+}
+
+form .login-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form .login-title h2 {
+    font-size: 40px;
+    font-family: 'koho', sans-serif;
+    color: #ffffff;
+}
+
+form .input-box {
+    width: 100%;
+    display: grid;
+    grid-template-rows: max-content;
+    row-gap: 20px;
+}
+
+form .input-box input {
+    width: 100%;
+    padding-block: 16px;
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'koho', sans-serif;
+    background: none;
+}
+
+form .input-box input::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+form .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+form .info .remember {
+    display: flex;
+    align-items: center;
+}
+
+form .info .remember input[type=checkbox] {
+    accent-color: #ffffff;
+}
+
+form .info .remember label {
+    color: #ffffff;
+    font-family: 'koho', sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+form .info .forgotpsw a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'koho', sans-serif;
+}
+
+form .info .forgotpsw a:hover {
+    text-decoration: underline;
+}
+
+form .login-button {
+    display: inline;
+}
+
+form .login-button input[type=submit] {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-family: 'koho', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+    padding-block: 15px;
+    background: rgba(231, 231, 231, 0.252);
+    border-radius: 4rem;
+    margin-top: 15px;
+}
+
+form .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+form .register span {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'koho', sans-serif;
+}
+
+form .register a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'koho', sans-serif;
+    font-weight: 600;
+}
+
+form .register a:hover {
+    text-decoration: underline;
+}
